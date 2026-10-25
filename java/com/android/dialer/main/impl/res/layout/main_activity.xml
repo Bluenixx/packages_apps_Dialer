@@ -47,16 +47,19 @@
 
     <com.android.dialer.widget.DialerFloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="20dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
         android:layout_gravity="end|bottom"
         android:forceDarkAllowed="false"
         android:src="@drawable/quantum_ic_dialpad_vd_theme_24"
         android:tint="@color/dialer_fab_icon_color"
         app:tint="@color/dialer_fab_icon_color"
         android:contentDescription="@string/dialpad_button_content_description"
-        app:backgroundTint="@color/dialer_theme_color_light"/>
+        app:backgroundTint="@color/dialer_theme_color_light"
+        app:fabCustomSize="80dp"
+        app:maxImageSize="36dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Dialer.Fab"/>
 
     <include android:id="@+id/promotion_bottom_sheet"
         layout="@layout/promotion_bottom_sheet"/>
